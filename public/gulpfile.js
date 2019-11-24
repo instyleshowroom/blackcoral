@@ -32,7 +32,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src(['./scripts/jquery.js', './scripts/rellax.js', './scripts/swup.js', './scripts/lozad.js', './scripts/wow.js', './scripts/main.js' ])
+  gulp.src(['./scripts/jquery.js', './scripts/isInViewport.js', './scripts/rellax.js', './scripts/swup.js', './scripts/lozad.js', './scripts/wow.js', './scripts/main.js' ])
   .pipe(uglify())
   .pipe(concat('script.js'))
   .pipe(gulp.dest(outputDir))
@@ -40,7 +40,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('js-en', function() {
-  gulp.src(['./scripts/jquery.js', './scripts/rellax.js', './scripts/swup.js', './scripts/lozad.js', './scripts/wow.js', './scripts/main-en.js' ])
+  gulp.src(['./scripts/jquery.js', './scripts/isInViewport.js', './scripts/rellax.js', './scripts/swup.js', './scripts/lozad.js', './scripts/wow.js', './scripts/main-en.js' ])
   .pipe(uglify())
   .pipe(concat('script-en.js'))
   .pipe(gulp.dest(outputDir))

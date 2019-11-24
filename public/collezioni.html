@@ -79,11 +79,17 @@
         <img class="rellax" style="position:absolute; right:0; bottom:-300px; max-width: 400%;margin-left: auto;" src="img/cloud-collection-3.png" alt="" title=""> 
       </div>
       <!-- Introduction Collections text -->
-      <div class="section" id="intro-collection">
+      <div class="section">
         <div class="container has-text-left">
           <div class="columns">
-            <div class="column is-6 is-offset-3">
-              <p class="is-size-5 rellax" data-rellax-percentage="0.5" data-rellax-speed="2">Le collezioni di Black
+            <div class="column is-6">
+                <video width="100%" controls poster="video/placeholder.png">
+                    <source src="video/black-coral.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="column is-5 is-offset-1" style="display: flex; align-items: center;">
+              <p class="is-size-5" data-rellax-percentage="0.5" data-rellax-speed="2">Le collezioni di Black
                 Coral hanno stampe audaci, silhouette ariose e vestono donne
                 <b>coraggiose</b>, <b>indipendenti</b>, <b>consapevoli.</b><br><br>Nasce da questa idea uno dei simboli
                 del brand: una
@@ -205,6 +211,15 @@
   </footer>
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script src="assets/script.js"></script>
+  <script>
+      $('video').each(function(){
+        if ($(this).is(":in-viewport")) {
+            $(this)[0].play();
+        } else {
+            $(this)[0].pause();
+        }
+    })
+  </script>
 
 </body>
 
