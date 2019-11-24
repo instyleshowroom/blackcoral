@@ -3,6 +3,11 @@
   padding-right: 15px;
 }
 
+.invert {
+  filter: invert(0) !important;
+  -webkit-filter: invert(0) !important;
+}
+
 #intro {
   height: 800px;
   display: flex;
@@ -279,7 +284,7 @@ footer {
 }
 
 .grid-collections .bg-lyla {
-  background-color: rgba($color: #C5BAC9, $alpha: 0.7);
+  background-color: rgba($color: #6CC5D4, $alpha: 0.7);
   z-index: 0;
   grid-column: 1 / span 24;
   grid-row: span 9 / 25;
@@ -293,7 +298,7 @@ footer {
 }
 
 .grid-collections-festive .bg-red {
-  background-color: rgba($color: #205C59, $alpha: 1);
+  background-color: #C5BAC9;
   grid-column: 1 / span 24;
   grid-row: 5 / span 9;
   z-index: 0;
