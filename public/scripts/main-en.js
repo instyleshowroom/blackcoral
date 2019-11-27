@@ -30,6 +30,22 @@ $(document).ready(function() {
   });
 });
 
+$('.navbar-item.ss19').hide();
+  $('.navbar-item.fw19').hide();
+
+  $('.collections-link').hover(
+    function () {
+      $('.navbar-item.ss19').fadeIn(300);
+      $('.navbar-item.fw19').fadeIn(300);
+      $('.collections-link').css('height','84px');
+    },
+    function () {
+      $('.navbar-item.ss19').fadeOut(300);
+      $('.navbar-item.fw19').fadeOut(300);
+      $('.collections-link').css('height','auto'), 300;
+    }
+  );
+
 
 
 

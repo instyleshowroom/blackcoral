@@ -19,6 +19,8 @@
   <link rel="icon" type="image/png" href="img/black_coral_favicon.png">
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/uwt0owx.css">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -43,7 +45,11 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
             <a href="about.html" class="navbar-item">About the brand</a>
-            <a href="collections.html" class="navbar-item">Collections</a>
+            <div class="collections-link">
+              <a href="collections.html" class="navbar-item">Collections</a>
+              <a href="collections.html" class="navbar-item fw19"> FW 19</a>
+              <a href="archive.html" class="navbar-item ss19"> SS 19</a>
+            </div>
             <a href="contact.html" class="navbar-item">Contact</a>
             <a href="stores.html" class="navbar-item">Stores</a>
             <a href="/privacy.html" class="navbar-item" style="float:right;">ITA</a>
@@ -504,6 +510,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <!-- <script src="assets/script.js"></script> -->
   <script src="/scripts/jquery.js"></script>
+  <script src="/assets/script-en.js"></script>
   <script>
   $(document).ready(function() {
   $(".navbar-burger").click(function() {
@@ -511,6 +518,23 @@
       $(".mobile-nav").toggleClass("is-active");
   });
 });
+</script>
+<script>
+  $('.navbar-item.ss19').hide();
+$('.navbar-item.fw19').hide();
+
+$('.collections-link').hover(
+  function () {
+    $('.navbar-item.ss19').fadeIn(300);
+    $('.navbar-item.fw19').fadeIn(300);
+    $('.collections-link').css('height','84px');
+  },
+  function () {
+    $('.navbar-item.ss19').fadeOut(300);
+    $('.navbar-item.fw19').fadeOut(300);
+    $('.collections-link').css('height','auto'), 300;
+  }
+);
 </script>
 </body>
 

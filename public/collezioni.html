@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="assets/bulma.css">
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/uwt0owx.css">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 </head>
@@ -50,9 +52,11 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
             <a href="/storia-del-brand.html" class="navbar-item">Storia del brand</a>
-            <a href="/collezioni.html" class="navbar-item">Collezioni</a>
-            <a href="/collezioni.html" class="navbar-item">-- FW 19</a>
-            <a href="archive.html" class="navbar-item">-- SS 19</a>
+            <div class="collections-link">
+              <a href="/collezioni.html" class="navbar-item collections">Collezioni</a>
+              <a href="/collezioni.html" class="navbar-item fw19">FW 19</a>
+              <a href="archive.html" class="navbar-item ss19">SS 19</a>
+            </div>
             <a href="/contatti.html" class="navbar-item">Contatti</a>
             <a href="/negozi.html" class="navbar-item">Negozi</a>
             <a href="#" class="navbar-item" style="float:right; text-decoration: underline;">ITA</a>
@@ -62,6 +66,8 @@
         </div>
 
       </nav>
+
+      
 
       <nav class="navbar-menu mobile-nav" id="MobileNav">
         <a href="storia-del-brand.html" class="navbar-item">Storia del brand</a>
@@ -78,7 +84,7 @@
       <div class="hero is-fullheight hero-collections">
         <div class="hero-body">
           <div class="container has-text-centered rellax" data-rellax-speed="2">
-          <span><h1 style="display: inline-block;" class="title has-text-white is-size-1">FALL/WINTER 19</h1></span>
+          <span><h1 style="display: inline-block;" class="title has-text-white is-size-1 homemade-apple">Fall/Winter 19</h1></span>
           </div>
         </div>
         <!-- <img class="rellax" style="position:absolute; right:0; bottom:-300px; max-width: 400%;margin-left: auto;" src="img/cloud-collection-3.png" alt="" title="">  -->
@@ -89,15 +95,17 @@
           <div class="container has-text-left">
             <div class="columns">
               <div class="column is-6">
-                  <video width="100%" controls poster="video/placeholder.png">
-                      <source src="video/black-coral.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+                  <div id="video-container">
+                    <video width="100%" controls poster="video/placeholder.png">
+                        <source src="video/black-coral.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
               </div>
               <div class="column is-5 is-offset-1" style="display: flex; align-items: center;">
                 <p class="is-size-5" data-rellax-percentage="0.5" data-rellax-speed="2">Le collezioni di Black
                   Coral hanno stampe audaci, silhouette ariose e vestono donne
-                  <b>coraggiose</b>, <b>indipendenti</b>, <b>consapevoli.</b><br><br>Nasce da questa idea uno dei simboli
+                  coraggiose, indipendenti, consapevoli.<br><br>Nasce da questa idea uno dei simboli
                   del brand: una
                   nuvola di colore cangiante e sfumata che ricorda la donna di Black Coral, sempre in movimento e
                   caratterizzata da un senso di leggerezza che non si addice solo ai suoi vestiti, ma anche alla sua
@@ -108,7 +116,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
   
       <!-- Collections grid -->
       <div class="grid-collections">
@@ -228,13 +236,32 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script src="assets/script.js"></script>
   <script>
-      $('video').each(function(){
-        if ($(this).is(":in-viewport")) {
-            $(this)[0].play();
-        } else {
-            $(this)[0].pause();
-        }
-    })
+    $(document).ready(function() {
+      // Get media - with autoplay disabled (audio or video)
+      var media = $('video');
+      var tolerancePixel = 40;
+
+      function checkMedia(){
+          // Get current browser top and bottom
+          var scrollTop = $(window).scrollTop() + tolerancePixel;
+          var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+          media.each(function(index, el) {
+              var yTopMedia = $(this).offset().top;
+              var yBottomMedia = $(this).height() + yTopMedia;
+
+              if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                  $(this).get(0).play();
+              } else {
+                  $(this).get(0).pause();
+              }
+          });
+
+          //}
+      }
+      $(document).on('scroll', checkMedia);
+  });
+
   </script>
   <script>
     var initialTopOffset = $('.navbar.is-transparent.is-fixed-top.is-white').offset().top;
