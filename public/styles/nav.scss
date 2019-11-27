@@ -76,6 +76,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .navbar.is-white {
+    filter: invert(0);
+    -webkit-filter: invert(0);
+  }
   .mobile-nav.mobile-nav.is-active {
     padding-top: 100px;
     padding-left: 17px;
