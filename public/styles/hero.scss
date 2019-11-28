@@ -1,22 +1,30 @@
 .hero-home {
-  background-image: url(../img/kimono-kori-savage+short-boxer-wood.jpg);
+  background-image: url(../img/home-hero.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .hero-about {
-  background-image: url(../img/vestito-silvy-crop-yume-red-4.jpg);
+  background-image: url(../img/about-hero.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .hero-collections {
+  background-image: url(../img/collections-hero.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hero-archive {
   background-image: url(../img/kimono-oliva-frida-1.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  margin-bottom: 8rem;
 }
 
 .hero-contact {

@@ -22,6 +22,8 @@
   <link rel="alternate" href="https://www.black-coral.it/en/privacy" hreflang="en-us" />
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/uwt0owx.css">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,7 +36,7 @@
       <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a href="/index.html">
-            <img src="img/bc-logo.png" alt="logo" width="230">
+            <img src="img/bc-logo.svg" alt="logo" width="230">
           </a>
           <a role="button" class="navbar-burger burger" data-target="mobileNav" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -46,7 +48,11 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
               <a href="/storia-del-brand.html" class="navbar-item">Storia del brand</a>
-              <a href="/collezioni.html" class="navbar-item">Collezioni</a>
+              <div class="collections-link">
+                <a href="/collezioni.html" class="navbar-item collections">Collezioni</a>
+                <a href="/collezioni.html" class="navbar-item fw19">FW 19</a>
+                <a href="archive.html" class="navbar-item ss19">SS 19</a>
+              </div>
               <a href="/negozi.html" class="navbar-item">Negozi</a>
               <a href="/contatti.html" class="navbar-item">Contatti</a>
               <a href="#" class="navbar-item" style="float:right; text-decoration: underline;">ITA</a>
@@ -59,7 +65,11 @@
 
       <div class="navbar-menu mobile-nav" id="MobileNav">
           <a href="/storia-del-brand.html" class="navbar-item">Storia del brand</a>
-          <a href="/collezioni.html" class="navbar-item">Collezioni</a>
+          <div class="collections-link">
+            <a href="#" class="navbar-item collections">Collezioni</a>
+            <a href="/collezioni.html" class="navbar-item fw19">FW 19</a>
+            <a href="archive.html" class="navbar-item ss19">SS 19</a>
+          </div>
           <a href="/negozi.html" class="navbar-item">Negozi</a>
           <a href="/contatti.html" class="navbar-item">Contatti</a>
           <a href="#" class="navbar-item" style="float:left; text-decoration: underline;">ITA</a>
@@ -551,6 +561,23 @@
       $(".mobile-nav").toggleClass("is-active");
   });
 });
+</script>
+<script>
+  $('.navbar-item.ss19').hide();
+$('.navbar-item.fw19').hide();
+
+$('.collections-link').hover(
+  function () {
+    $('.navbar-item.ss19').fadeIn(300);
+    $('.navbar-item.fw19').fadeIn(300);
+    
+  },
+  function () {
+    $('.navbar-item.ss19').fadeOut(300);
+    $('.navbar-item.fw19').fadeOut(300);
+    
+  }
+);
 </script>
 </body>
 

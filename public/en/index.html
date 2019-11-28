@@ -21,6 +21,8 @@
   <link rel="alternate" href="https://www.black-coral.it/en/" hreflang="en-us" />
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/uwt0owx.css">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -30,10 +32,10 @@
   <div id="swup">
     <div class="transition-fade">
       <!-- Navigation -->
-      <nav class="navbar is-transparent is-fixed-top" aria-label="main navigation">
+      <nav class="navbar is-transparent is-fixed-top is-white" aria-label="main navigation">
         <div class="navbar-brand">
           <a href="index.html">
-            <img src="/img/bc-logo.png" alt="logo" width="230">
+            <img src="/img/bc-logo.svg" alt="logo" width="230">
           </a>
           <a role="button" class="navbar-burger burger" data-target="mobileNav" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -45,7 +47,11 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
             <a href="about.html" class="navbar-item">About the brand</a>
-            <a href="collections.html" class="navbar-item">Collections</a>
+            <div class="collections-link">
+              <a href="collections.html" class="navbar-item">Collections</a>
+              <a href="collections.html" class="navbar-item fw19"> FW 19</a>
+              <a href="archive.html" class="navbar-item ss19"> SS 19</a>
+            </div>
             <a href="contact.html" class="navbar-item">Contact</a>
             <a href="stores.html" class="navbar-item">Stores</a>
             <a href="/index.html" class="navbar-item" style="float:right;">ITA</a>
@@ -56,78 +62,86 @@
 
       </nav>
 
-      <nav class="navbar-menu mobile-nav" id="MobileNav">
-        <a href="about.html" class="navbar-item">About the brand</a>
-        <a href="collections.html" class="navbar-item">Collections</a>
-        <a href="contact.html" class="navbar-item">Contact</a>
-        <a href="stores.html" class="navbar-item">Stores</a>
-        <a href="/index.html" class="navbar-item" style="float:left;">ITA</a>
-        <span style="float:left;"> &nbsp;/&nbsp; </span>
-        <a href="#" class="navbar-item" style="float:left; text-decoration: underline;">ENG</a>
-      </nav>
+      <div class="section1">
+        <nav class="navbar-menu mobile-nav" id="MobileNav">
+          <a href="about.html" class="navbar-item">About the brand</a>
+          <div class="collections-link">
+            <a href="#" class="navbar-item">Collections</a>
+            <a href="collections.html" class="navbar-item fw19"> FW 19</a>
+            <a href="archive.html" class="navbar-item ss19"> SS 19</a>
+          </div>
+          <a href="contact.html" class="navbar-item">Contact</a>
+          <a href="stores.html" class="navbar-item">Stores</a>
+          <a href="/index.html" class="navbar-item" style="float:left;">ITA</a>
+          <span style="float:left;"> &nbsp;/&nbsp; </span>
+          <a href="#" class="navbar-item" style="float:left; text-decoration: underline;">ENG</a>
+        </nav>
+      </div>
       <!-- hero -->
       <div class="hero is-fullheight hero-home thumbnail"></div>
 
       <!-- index introduction text -->
-      <section class="section" id="intro">
-        <div class="container has-text-centered rellax"  data-rellax-speed="1" data-rellax-percentage="0.5">
-          <h1 class="title ff-market has-text-black">Live to the full</h1>
-          <div class="columns">
-            <div class="column is-8 is-offset-2 p-0-mobile">
-              <p class="is-size-5">Like a colour-changing shaded cloud: always on the move and with some kind of lightness that is not only suitable for her clothes, but also for her personality.</p>
+      <div class="section2">
+        <section class="section" id="intro">
+          <div class="container has-text-centered rellax"  data-rellax-speed="1" data-rellax-percentage="0.5">
+            <h1 class="title has-text-black homemade-apple">Live to the full</h1>
+            <div class="columns">
+              <div class="column is-8 is-offset-2 p-0-mobile">
+                <p class="is-size-5">Like a colour-changing shaded cloud: always on the move and with some kind of lightness that is not only suitable for her clothes, but also for her personality.</p>
+              </div>
             </div>
           </div>
+        </section>
+  
+        <!-- best-in-class grid -->
+        <div class="grid">
+          <div class="bg-red wow fadeIn"></div>
+          <figure class="grid-img grid-img-1 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
+            <img class="lozad" data-src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-2.jpg" src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-2.jpg" alt="Olivia Frida"
+              title="Olivia Frida">
+            <img class="lozad img_overlay" data-src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-1.jpg" src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-1.jpg" alt="Olivia Frida"
+              title="Olivia Frida">
+            <!-- <figcaption>Olivia Frida</figcaption> -->
+          </figure>
+          <figure class="grid-img grid-img-2 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
+            <img class="lozad" data-src="img/home/vestito-silvy-crop-yume-red-2.jpg" src="img/home/vestito-silvy-crop-yume-red-2.jpg" alt="Silvy Crop Yume Red"
+              title="Silvy Crop Yume Red">
+            <img class="lozad img_overlay" data-src="img/home/vestito-silvy-crop-yume-red-1.jpg" src="img/home/vestito-silvy-crop-yume-red-1.jpg" alt="Silvy Crop Yume Red"
+              title="Silvy Crop Yume Red">
+            <!-- <figcaption style="float:right">Silvy Crop Yume Red</figcaption> -->
+  
+          </figure>
+          <figure class="grid-img grid-img-3 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
+            <img class="lozad" data-src="img/home/kimono-oliva-frida-3.jpg" src="img/home/kimono-oliva-frida-3.jpg" alt="Olivia Frida"
+              title="Olivia Frida">
+            <img class="lozad img_overlay" data-src="img/home/kimono-oliva-frida-2.jpg" src="img/home/kimono-oliva-frida-2.jpg" alt="Olivia Frida"
+              title="Olivia Frida">
+            <!-- <figcaption style="float:right">Olivia Frida</figcaption> -->
+          </figure>
+          <figure class="grid-img grid-img-4 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
+            <img class="lozad" data-src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-2.jpg" src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-2.jpg" alt="Olivia Butterfly + Diagonal"
+              title="Olivia Butterfly + Diagonal">
+            <img class="lozad img_overlay" data-src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-1.jpg" src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-1.jpg" alt="Silvy Crop Yume Red"
+              title="Silvy Crop Yume Red">
+            <!-- <figcaption style="float:right">Silvy Crop Yume Red</figcaption> -->
+          </figure>
+          <div class="bg-yellow wow fadeIn"></div>
         </div>
-      </section>
-
-      <!-- best-in-class grid -->
-      <div class="grid">
-        <div class="bg-red wow fadeIn"></div>
-        <figure class="grid-img grid-img-1 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
-          <img class="lozad" data-src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-2.jpg" src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-2.jpg" alt="Olivia Frida"
-            title="Olivia Frida">
-          <img class="lozad img_overlay" data-src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-1.jpg" src="img/home/kimono-oliva-frida+pantalone-ruff-yume-pink-1.jpg" alt="Olivia Frida"
-            title="Olivia Frida">
-          <figcaption>Olivia Frida</figcaption>
-        </figure>
-        <figure class="grid-img grid-img-2 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
-          <img class="lozad" data-src="img/home/vestito-silvy-crop-yume-red-2.jpg" src="img/home/vestito-silvy-crop-yume-red-2.jpg" alt="Silvy Crop Yume Red"
-            title="Silvy Crop Yume Red">
-          <img class="lozad img_overlay" data-src="img/home/vestito-silvy-crop-yume-red-1.jpg" src="img/home/vestito-silvy-crop-yume-red-1.jpg" alt="Silvy Crop Yume Red"
-            title="Silvy Crop Yume Red">
-          <figcaption style="float:right">Silvy Crop Yume Red</figcaption>
-
-        </figure>
-        <figure class="grid-img grid-img-3 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
-          <img class="lozad" data-src="img/home/kimono-oliva-frida-3.jpg" src="img/home/kimono-oliva-frida-3.jpg" alt="Olivia Frida"
-            title="Olivia Frida">
-          <img class="lozad img_overlay" data-src="img/home/kimono-oliva-frida-2.jpg" src="img/home/kimono-oliva-frida-2.jpg" alt="Olivia Frida"
-            title="Olivia Frida">
-          <figcaption style="float:right">Olivia Frida</figcaption>
-        </figure>
-        <figure class="grid-img grid-img-4 wow fadeIn best-in-class rellax" data-rellax-percentage="0.5">
-          <img class="lozad" data-src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-2.jpg" src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-2.jpg" alt="Olivia Butterfly + Diagonal"
-            title="Olivia Butterfly + Diagonal">
-          <img class="lozad img_overlay" data-src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-1.jpg" src="img/home/kimono-oliva-butterfly+leggings-alba-diagonal-1.jpg" alt="Silvy Crop Yume Red"
-            title="Silvy Crop Yume Red">
-          <figcaption style="float:right">Silvy Crop Yume Red</figcaption>
-        </figure>
-        <div class="bg-yellow wow fadeIn"></div>
+  
+        <!-- index quote -->
+        <section class="hero is-primary">
+          <div class="container has-text-centered">
+            <div class="columns hero-quote">
+              <div class="column is-8 wow slideInUp p-0-mobile">
+                <h2 class="title has-text-black homemade-apple" style="font-weight: 400;">Made with love</h2>
+                <p class="has-text-black is-size-4">Black Coral is synonymous with a life discovered in its entirety.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <!-- index quote -->
-      <section class="hero is-primary">
-        <div class="container has-text-centered">
-          <div class="columns hero-quote">
-            <div class="column is-8 wow slideInUp p-0-mobile">
-              <h2 class="title ff-market has-text-black">Made with love</h2>
-              <p class="has-text-black is-size-4">Black Coral is synonymous with a life discovered in its entirety.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
 
     <!-- Page transition -->
     <div class="transition-wipe overlay"></div>
@@ -153,6 +167,24 @@
   </div>
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script src="/assets/script-en.js"></script>
+  <script>
+    var initialTopOffset = $('.navbar.is-transparent.is-fixed-top.is-white').offset().top;
+    $(window).scroll(function(event) {
+      var scroll = $(window).scrollTop();
+      // if the top of our browser is inside the section2
+      if (scroll + initialTopOffset >= $('.section2').offset().top && scroll + initialTopOffset <= $('.section2').offset().top + $('.section2').outerHeight()) {
+        $('nav').addClass('invert'); // add the class
+      } else {
+        $('nav').removeClass('invert'); // remove the class
+      }
+    });
+
+    //trigger the scroll
+    $(window).scroll(); //ensure if you're in current position when page is refreshed
+
+    
+
+  </script>
   
 </body>
 

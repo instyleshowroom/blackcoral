@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="assets/bulma.css">
   <link rel="stylesheet" href="assets/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/uwt0owx.css">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 </head>
@@ -35,10 +37,10 @@
     <div class="transition-fade">
 
       <!-- Navigation -->
-      <nav class="navbar is-transparent is-fixed-top" aria-label="main navigation">
+      <nav class="navbar is-transparent is-fixed-top is-white" aria-label="main navigation">
         <div class="navbar-brand">
           <a href="/index.html">
-            <img src="img/bc-logo.png" alt="logo" width="230">
+            <img src="img/bc-logo.svg" alt="logo" width="230">
           </a>
           <a role="button" class="navbar-burger burger" data-target="mobileNav" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -50,7 +52,11 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end">
             <a href="/storia-del-brand.html" class="navbar-item">Storia del brand</a>
-            <a href="/collezioni.html" class="navbar-item">Collezioni</a>
+            <div class="collections-link">
+              <a href="/collezioni.html" class="navbar-item collections">Collezioni</a>
+              <a href="/collezioni.html" class="navbar-item fw19">FW 19</a>
+              <a href="archive.html" class="navbar-item ss19">SS 19</a>
+            </div>
             <a href="/contatti.html" class="navbar-item">Contatti</a>
             <a href="/negozi.html" class="navbar-item">Negozi</a>
             <a href="#" class="navbar-item" style="float:right; text-decoration: underline;">ITA</a>
@@ -61,9 +67,17 @@
 
       </nav>
 
+      
+
       <nav class="navbar-menu mobile-nav" id="MobileNav">
         <a href="storia-del-brand.html" class="navbar-item">Storia del brand</a>
-        <a href="collezioni.html" class="navbar-item">Collezioni</a>
+        <div class="collections-link">
+          <a href="#" class="navbar-item collections">Collezioni</a>
+          <a href="/collezioni.html" class="navbar-item fw19">FW 19</a>
+          <a href="archive.html" class="navbar-item ss19">SS 19</a>
+        </div>
+        <a href="archive.html" class="navbar-item">-- FW 19</a>
+        <a href="archive.html" class="navbar-item">-- SS 19</a>
         <a href="/contatti.html" class="navbar-item">Contatti</a>
         <a href="negozi.html" class="navbar-item">Negozi</a>
         <a href="#" class="navbar-item" style="float:left; text-decoration: underline;">ITA</a>
@@ -73,138 +87,201 @@
       <!-- Hero -->
       <div class="hero is-fullheight hero-collections">
         <div class="hero-body">
-          <div class="container has-text-centered">
+          <div class="container has-text-centered rellax" data-rellax-speed="2">
+          <span><h1 style="display: inline-block;" class="title has-text-white is-size-1 homemade-apple">Fall/Winter 19</h1></span>
           </div>
         </div>
-        <img class="rellax" style="position:absolute; right:0; bottom:-300px; max-width: 400%;margin-left: auto;" src="img/cloud-collection-3.png" alt="" title=""> 
+        <!-- <img class="rellax" style="position:absolute; right:0; bottom:-300px; max-width: 400%;margin-left: auto;" src="img/cloud-collection-3.png" alt="" title="">  -->
       </div>
       <!-- Introduction Collections text -->
-      <div class="section" id="intro-collection">
-        <div class="container has-text-left">
-          <div class="columns">
-            <div class="column is-6 is-offset-3">
-              <p class="is-size-5 rellax" data-rellax-percentage="0.5" data-rellax-speed="2">Le collezioni di Black
-                Coral hanno stampe audaci, silhouette ariose e vestono donne
-                <b>coraggiose</b>, <b>indipendenti</b>, <b>consapevoli.</b><br><br>Nasce da questa idea uno dei simboli
-                del brand: una
-                nuvola di colore cangiante e sfumata che ricorda la donna di Black Coral, sempre in movimento e
-                caratterizzata da un senso di leggerezza che non si addice solo ai suoi vestiti, ma anche alla sua
-                personalità.
-                <br>
-              </p>
+      <div class="section2">
+        <div class="section" id="intro-collection">
+          <div class="container has-text-left">
+            <div class="columns">
+              <div class="column is-6">
+                  <div id="video-container">
+                    <video width="100%" controls poster="video/placeholder.png">
+                        <source src="video/black-coral.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+              </div>
+              <div class="column is-5 is-offset-1" style="display: flex; align-items: center;">
+                <p class="is-size-5" data-rellax-percentage="0.5" data-rellax-speed="2">Le collezioni di Black
+                  Coral hanno stampe audaci, silhouette ariose e vestono donne
+                  coraggiose, indipendenti, consapevoli.<br><br>Nasce da questa idea uno dei simboli
+                  del brand: una
+                  nuvola di colore cangiante e sfumata che ricorda la donna di Black Coral, sempre in movimento e
+                  caratterizzata da un senso di leggerezza che non si addice solo ai suoi vestiti, ma anche alla sua
+                  personalità.
+                  <br>
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      
+  
+      <!-- Collections grid -->
+      <div class="grid-collections">
+        <div class="bg-lyla"></div>
+        <div class="bg-light-green"></div>
+        <figure class="grid-collections-img-1 wow fadeIn">    
+          <img class="lozad" data-src="img/collections/collections-new-1.jpg" src="img/collections/collections-new-1.jpg" alt="kimono oliva butterfly+leggings alba diagonal"
+            title="">
+        </figure>
+  
+        <figure class="grid-collections-img-2 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-2.jpg" src="img/collections/collections-new-2.jpg" alt="kimono oliva frida+pantalone ruff yume pink"
+            title="">
+        </figure>
+  
+        <figure class="grid-collections-img-3 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-3.jpg" src="img/collections/collections-new-3.jpg" alt="kimono kori savage+short boxer wood"
+            title="">
+        </figure>
+  
+        <figure class="grid-collections-img-4 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-4.jpg" src="img/collections/collections-new-4.jpg" alt="vestito silvy crop yume red"
+            title="">
+        </figure>
+  
+        <figure class="grid-collections-img-5 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-5.jpg" src="img/collections/collections-new-5.jpg" alt="minigonna picc band+kimono oliva band"
+            title="">
+        </figure>
+  
+        <figure class="grid-collections-img-6 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-6.jpg" src="img/collections/collections-new-6.jpg" alt="" title="">
+        </figure>
+  
+        <figure class="grid-collections-img-7 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-7.jpg" src="img/collections/collections-new-7.jpg" alt="kimono kori savage+short boxer wood"
+            title="">
+        </figure>
+  
+        <figure class="grid-collections-img-8 wow fadeIn">
+          <img class="lozad" data-src="img/collections/collections-new-8.jpg" src="img/collections/collections-new-8.jpg" alt="" title="">
+        </figure>
       </div>
-    </div>
-
-    <!-- Collections grid -->
-    <div class="grid-collections">
-      <div class="bg-lyla"></div>
-      <div class="bg-light-green"></div>
-      <figure class="grid-collections-img-1 wow fadeIn">
-        <img class="lozad" data-src="img/collections/kimono-oliva-butterfly+leggings-alba-diagonal-3.jpg" src="img/collections/kimono-oliva-butterfly+leggings-alba-diagonal-3.jpg" alt="kimono oliva butterfly+leggings alba diagonal"
-          title="">
-      </figure>
-
-      <figure class="grid-collections-img-2 wow fadeIn">
-        <img class="lozad" data-src="img/collections/kimono-oliva-frida+pantalone-ruff-yume-pink-3.jpg" src="img/collections/kimono-oliva-frida+pantalone-ruff-yume-pink-3.jpg" alt="kimono oliva frida+pantalone ruff yume pink"
-          title="">
-      </figure>
-
-      <figure class="grid-collections-img-3 wow fadeIn">
-        <img class="lozad" data-src="img/collections/kimono-kori-savage+short-boxer-wood-2.jpg" src="img/collections/kimono-kori-savage+short-boxer-wood-2.jpg" alt="kimono kori savage+short boxer wood"
-          title="">
-      </figure>
-
-      <figure class="grid-collections-img-4 wow fadeIn">
-        <img class="lozad" data-src="img/collections/vestito-silvy-crop-yume-red-3.jpg" src="img/collections/vestito-silvy-crop-yume-red-3.jpg" alt="vestito silvy crop yume red"
-          title="">
-      </figure>
-
-      <figure class="grid-collections-img-5 wow fadeIn">
-        <img class="lozad" data-src="img/collections/minigonna-picc-band+kimono-oliva-band.jpg" src="img/collections/minigonna-picc-band+kimono-oliva-band.jpg" alt="minigonna picc band+kimono oliva band"
-          title="">
-      </figure>
-
-      <figure class="grid-collections-img-6 wow fadeIn">
-        <img class="lozad" data-src="img/collections/collections-grid-6.jpg" src="img/collections/collections-grid-6.jpg" alt="" title="">
-      </figure>
-
-      <figure class="grid-collections-img-7 wow fadeIn">
-        <img class="lozad" data-src="img/collections/kimono-kori-savage+short-boxer-wood-3.jpg" src="img/collections/kimono-kori-savage+short-boxer-wood-3.jpg" alt="kimono kori savage+short boxer wood"
-          title="">
-      </figure>
-
-      <figure class="grid-collections-img-8 wow fadeIn">
-        <img class="lozad" data-src="img/collections/collections-grid-8.jpg" src="img/collections/collections-grid-8.jpg" alt="" title="">
-      </figure>
-    </div>
-
-    <!-- Collection inspiration text -->
-    <section id="collection-inspiration">
-      <div class="container has-text-centered">
-        <div class="columns">
-          <div class="column is-10 is-offset-1">
-              <h2 class="title ff-market-bold">
-                Spirito Contemporaneo
-              </h2>
+  
+      <!-- Collection inspiration text -->
+      <section id="collection-inspiration">
+        <div class="container has-text-centered">
+          <div class="columns">
+            <div class="column is-10 is-offset-1">
+                <h2 class="title homemade-apple" style="font-weight: 400;">
+                  Festive Season
+                </h2>
+            </div>
           </div>
         </div>
+      </section>
+  
+      <div class="grid-collections-festive">
+          <div class="bg-red"></div>
+          <figure class="grid-collections-festive-img-1 wow fadeIn">
+              <img class="lozad" data-src="img/collections/festive-1.jpg" src="img/collections/festive-1.jpg" alt="kimono kori savage+short boxer wood"
+                title="">
+            </figure>
+      
+            <figure class="grid-collections-festive-img-2 wow fadeIn">
+              <img class="lozad" data-src="img/collections/festive-2.jpg" src="img/collections/festive-2.jpg" alt="" title="">
+            </figure>
+  
+            <figure class="grid-collections-festive-img-3 wow fadeIn">
+                <img class="lozad" data-src="img/collections/festive-3.jpg" src="img/collections/festive-3.jpg" alt="" title="">
+              </figure>
+            <figure class="grid-collections-festive-img-4 wow fadeIn">
+                <img class="lozad" data-src="img/collections/festive-4.jpg" src="img/collections/festive-4.jpg" alt="" title="">
+              </figure>
+              <figure class="grid-collections-festive-img-5 wow fadeIn">
+                  <img class="lozad" data-src="img/collections/festive-5.jpg" src="img/collections/festive-5.jpg" alt="" title="">
+                </figure>
+              <figure class="grid-collections-festive-img-6 wow fadeIn">
+                  <img class="lozad" data-src="img/collections/festive-6.jpg" src="img/collections/festive-6.jpg" alt="" title="">
+                </figure>
       </div>
-    </section>
-
-    <!-- duo images grid -->
-    <div class="duo-section dark-green-bg">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-4 m-r-xl p-none">
-            <img class="wow lozad fadeIn" src="img/collections/vestito-elise-yume-pink.jpg" alt="vestito yume pink"
-              title="">
-          </div>
-          <div class="column is-5 p-none collections-last-img">
-            <img class="wow lozad fadeIn" src="img/collections/chemise-ilary-blackandwhite+short-boxer-savage.jpg" alt="chemise ilary black and white+short boxer savage"
-              title="">
+  
+      <!-- duo images grid -->
+      <!-- <section class="duo-section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-4 rectangle m-l-xl">
+              <p>
+              </p>
+            </div>
+            <div class="column is-5 p-none">
+              <img class="p-t-lg" src="img/img-1-home.grid.png" alt="">
+            </div>
           </div>
         </div>
-      </div>
+      </section> -->
+      <!-- page transition -->
+      <div class="transition-wipe overlay"></div>
     </div>
-
-    <!-- duo images grid -->
-    <!-- <section class="duo-section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-4 rectangle m-l-xl">
-            <p>
-            </p>
-          </div>
-          <div class="column is-5 p-none">
-            <img class="p-t-lg" src="img/img-1-home.grid.png" alt="">
-          </div>
+    <!-- footer  -->
+    <footer>
+      <div class="section">
+        <div class="container has-text-centered">
+          <p class="social-links serif">
+            <span>
+              <!-- <a class="social-link" href="#">FACEBOOK</a></span><span> - </span> <span> -->
+              <a class="social-link" href="https://www.instagram.com/black_coral_/" target="_blank" rel="noreferrer">Instagram</a>
+            </span>
+          </p>
+          <p class="is-size-7"><a href="/privacy.html">Privacy & Cookie Policy</a>
+            – Made by Iuri & Timo Anzalone.
+            <br> © 2019 Blackcoral. All rights reserved.</p>
         </div>
       </div>
-    </section> -->
-    <!-- page transition -->
-    <div class="transition-wipe overlay"></div>
-  </div>
-  <!-- footer  -->
-  <footer>
-    <div class="section">
-      <div class="container has-text-centered">
-        <p class="social-links serif">
-          <span>
-            <!-- <a class="social-link" href="#">FACEBOOK</a></span><span> - </span> <span> -->
-            <a class="social-link" href="https://www.instagram.com/black_coral_/" target="_blank" rel="noreferrer">Instagram</a>
-          </span>
-        </p>
-        <p class="is-size-7"><a href="/privacy.html">Privacy & Cookie Policy</a>
-          – Made by Iuri & Timo Anzalone.
-          <br> © 2019 Blackcoral. All rights reserved.</p>
+    </footer>
       </div>
-    </div>
-  </footer>
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script src="assets/script.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Get media - with autoplay disabled (audio or video)
+      var media = $('video');
+      var tolerancePixel = 40;
+
+      function checkMedia(){
+          // Get current browser top and bottom
+          var scrollTop = $(window).scrollTop() + tolerancePixel;
+          var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+          media.each(function(index, el) {
+              var yTopMedia = $(this).offset().top;
+              var yBottomMedia = $(this).height() + yTopMedia;
+
+              if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                  $(this).get(0).play();
+              } else {
+                  $(this).get(0).pause();
+              }
+          });
+
+          //}
+      }
+      $(document).on('scroll', checkMedia);
+  });
+
+  </script>
+  <script>
+    var initialTopOffset = $('.navbar.is-transparent.is-fixed-top.is-white').offset().top;
+    $(window).scroll(function(event) {
+      var scroll = $(window).scrollTop();
+      // if the top of our browser is inside the section2
+      if (scroll + initialTopOffset >= $('.section2').offset().top && scroll + initialTopOffset <= $('.section2').offset().top + $('.section2').outerHeight()) {
+        $('nav').addClass('invert'); // add the class
+      } else {
+        $('nav').removeClass('invert'); // remove the class
+      }
+    });
+
+  //trigger the scroll
+  $(window).scroll(); //ensure if you're in current position when page is refreshed
+  </script>
 
 </body>
 
